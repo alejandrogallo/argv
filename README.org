@@ -1,0 +1,21 @@
+#+title: ARGV
+
+* Introduction
+
+This is a function taken from
+[[https://github.com/libre-man/unix-opts][unix-opts]] to have a compatibility layer
+between common lisp implementations to get the argv.
+
+* Usage
+Copy this repository into your =~/common-lisp/=
+like
+#+begin_src sh
+git clone git@github.com:alejandrogallo/argv ~/common-lisp/argv
+#+end_src
+
+#+begin_src lisp
+(require :asdf)
+(require :argv)
+(print (argv:argv))
+#+end_src
+
