@@ -6,12 +6,17 @@ This is a function taken from
 [[https://github.com/libre-man/unix-opts][unix-opts]] to have a compatibility layer
 between common lisp implementations to get the argv.
 
+If you have =uiop= installed, consider just using the function
+=uiop:raw-command-line-arguments=.
+
 * Usage
 Copy this repository into your =~/common-lisp/=
 like
 #+begin_src sh
 git clone git@github.com:alejandrogallo/argv ~/common-lisp/argv
 #+end_src
+
+Then use it like:
 
 #+begin_src lisp
 (require :asdf)
